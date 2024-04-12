@@ -202,16 +202,7 @@ public class PaymentCardForm: PaymentForm {
             if newHeight < dismissibleHigh {
                 self.animateDismissView()
                 let parent = self.presentingViewController
-                self.dismiss(animated: true) {
-                    if let parent = parent {
-                        if !self.configuration.disableApplePay {
-                            PaymentForm.present(with: self.configuration, from: parent)
-                        } else {
-                            PaymentForm.present(with: self.configuration, from: parent)
-                        }
-                    }
-                }
-                
+                self.dismiss(animated: true)
             }
             else if newHeight < defaultHeight {
                 // Condition 2: If new height is below default, animate back to default

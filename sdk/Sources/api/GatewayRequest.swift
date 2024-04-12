@@ -5,8 +5,7 @@
 //  Created by Cloudpayments on 16.06.2023.
 //
 
-import networking
-import Foundation
+import CloudpaymentsNetworking
 
 struct PayButtonStatus {
     var isOnSbp: Bool
@@ -35,7 +34,7 @@ class GatewayRequest {
     
     private class TinkoffPayRequestData<Model: Codable>: BaseRequest, CloudpaymentsRequestType {
         
-        var data: networking.CloudpaymentsRequest
+        var data: CloudpaymentsNetworking.CloudpaymentsRequest
         typealias ResponseType = Model
         
         //MARK: - connect is on tinkoff pay button

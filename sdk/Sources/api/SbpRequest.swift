@@ -6,12 +6,12 @@
 //
 
 import Foundation
-import networking
+import CloudpaymentsNetworking
 
 class SbpRequest {
     private class PrivateSbpRequest<Model: Codable>: BaseRequest, CloudpaymentsRequestType {
         
-        var data: networking.CloudpaymentsRequest
+        var data: CloudpaymentsNetworking.CloudpaymentsRequest
         typealias ResponseType = Model
         
         

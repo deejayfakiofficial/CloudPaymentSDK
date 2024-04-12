@@ -7,8 +7,9 @@
 //
 
 public protocol PaymentDelegate: AnyObject {
-    func onPaymentFinished(_ transactionId: Int64?)
-    func onPaymentFailed(_ errorMessage: String?)
+    func onPaymentFinished(_ transactionId: Int64?, _ orderId: Int)
+    func onPaymentFailed(_ errorMessage: String?, _ orderId: Int)
+    func onPaymentCanceled(_ orderId: Int)
 }
 
 public protocol PaymentUIDelegate: AnyObject {
@@ -25,12 +26,16 @@ internal class PaymentDelegateImpl {
         self.delegate = delegate
     }
     
-    func paymentFinished(_ transaction: Transaction?){
-        self.delegate?.onPaymentFinished(transaction?.transactionId)
+    func paymentFinished(_ transaction: Transaction?, _ orderId: Int){
+        self.delegate?.onPaymentFinished(transaction?.transactionId, orderId)
     }
     
-    func paymentFailed(_ errorMessage: String?) {
-        self.delegate?.onPaymentFailed(errorMessage)
+    func paymentFailed(_ errorMessage: String?, _ orderId: Int) {
+        self.delegate?.onPaymentFailed(errorMessage, orderId)
+    }
+
+    func paymentCanceled(_ orderId: Int) {
+        self.delegate?.onPaymentCanceled(orderId)
     }
 }
 

@@ -10,8 +10,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "CloudPaymentSDKIntaro",
-            targets: ["sdk"]),
+            name: "CloudPayments",
+            targets: ["CloudPayments"]),
     ],
     
     dependencies: [
@@ -20,7 +20,7 @@ let package = Package(
     
     targets: [
         .target(
-            name: "sdk",
+            name: "CloudPayments",
             dependencies: ["CloudPaymentNetworkingIntaro"],
             path: "sdk",
             resources: [.process("../Resources")]),
