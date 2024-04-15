@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         .package(name: "CloudpaymentsNetworking",
                  url: "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git",
-                 from: "3.0.0")
+                 from: "5.0.0")
     ],
     
     targets: [
