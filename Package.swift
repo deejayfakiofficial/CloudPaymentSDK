@@ -15,17 +15,16 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(
-            name: "CloudpaymentsNetworking",
-            url: "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git",
-            from: "5.0.0"
-        ),
+        .package(name: "CloudpaymentsNetworking",
+                 url: "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git",
+                 from: "5.0.0")
     ],
+    
     targets: [
         .target(
             name: "CloudPayments",
+            dependencies: ["CloudpaymentsNetworking"],
             path: "sdk",
-            resources: [.process("../Resources")]
-        ),
+            resources: [.process("../Resources")]),
     ]
 )
