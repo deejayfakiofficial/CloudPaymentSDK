@@ -8,20 +8,21 @@ let package = Package(
     platforms: [
             .iOS(.v14),],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "CloudPayments",
             targets: ["CloudPayments"]),
     ],
     
     dependencies: [
-        .package(url: "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git", from: "1.5.1")
+        .package(name: "CloudpaymentsNetworking",
+                 url: "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git",
+                 from: "3.0.0")
     ],
     
     targets: [
         .target(
             name: "CloudPayments",
-            dependencies: ["CloudPaymentNetworkingIntaro"],
+            dependencies: ["CloudpaymentsNetworking"],
             path: "sdk",
             resources: [.process("../Resources")]),
     ]
