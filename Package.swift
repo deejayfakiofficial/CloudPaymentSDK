@@ -6,24 +6,30 @@ import PackageDescription
 let package = Package(
     name: "CloudPayments",
     platforms: [
-            .iOS(.v14),],
+        .iOS(.v14),
+    ],
     products: [
         .library(
             name: "CloudPayments",
-            targets: ["CloudPayments"]),
+            targets: ["CloudPayments"]
+        ),
     ],
-    
     dependencies: [
-        .package(name: "CloudpaymentsNetworking",
-                 url: "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git",
-                 from: "5.0.0")
+        .package(
+            name: "CloudpaymentsNetworking",
+            url: "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git",
+            from: "5.0.0"
+        ),
     ],
-    
     targets: [
         .target(
             name: "CloudPayments",
-            dependencies: ["CloudpaymentsNetworking"],
+            dependencies: ["CloudpaymentsNetworking", 
+                .product(name: "Foundation",
+                         package: "swift-foundation")
+            ],
             path: "sdk",
-            resources: [.process("../Resources")]),
+            resources: [.process("../Resources")]
+        ),
     ]
 )
