@@ -6,6 +6,7 @@
 //
 
 import CloudpaymentsNetworking
+import Foundation
 
 class AuthRequest: BaseRequest, CloudpaymentsRequestType {
     typealias ResponseType = TransactionResponse

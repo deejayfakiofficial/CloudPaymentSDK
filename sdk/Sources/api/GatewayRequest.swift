@@ -6,6 +6,7 @@
 //
 
 import CloudpaymentsNetworking
+import Foundation
 
 struct PayButtonStatus {
     var isOnSbp: Bool

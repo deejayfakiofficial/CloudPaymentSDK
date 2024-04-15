@@ -7,6 +7,7 @@
 //
 
 import WebKit
+import Foundation
 
 public protocol ThreeDsDelegate: AnyObject  {
     func willPresentWebView(_ webView: WKWebView)

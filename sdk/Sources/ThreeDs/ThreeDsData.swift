@@ -6,6 +6,8 @@
 //  Copyright © 2020 Cloudpayments. All rights reserved.
 //
 
+import Foundation
+
 public class ThreeDsData {
     private(set) var transactionId = String()
     private(set) var paReq = String()

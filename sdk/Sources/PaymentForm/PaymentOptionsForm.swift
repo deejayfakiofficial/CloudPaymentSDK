@@ -8,6 +8,7 @@
 
 import UIKit
 import PassKit
+import Foundation
 
 final class PaymentOptionsForm: PaymentForm, PKPaymentAuthorizationViewControllerDelegate  {
     @IBOutlet private weak var applePayContainer: View!

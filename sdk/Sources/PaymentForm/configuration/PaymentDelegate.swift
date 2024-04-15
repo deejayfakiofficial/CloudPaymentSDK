@@ -5,6 +5,7 @@
 //  Created by Sergey Iskhakov on 08.10.2020.
 //  Copyright © 2020 Cloudpayments. All rights reserved.
 //
+import Foundation
 
 public protocol PaymentDelegate: AnyObject {
     func onPaymentFinished(_ transactionId: Int64?, _ orderId: Int)

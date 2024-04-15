@@ -6,6 +6,7 @@
 //
 
 import SafariServices
+import Foundation
 
 final class SafariViewController: SFSafariViewController {
     

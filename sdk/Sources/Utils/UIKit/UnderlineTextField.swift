@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class UnderlineTextField: UITextField, UITextFieldDelegate {
     private var underlineView : UIView?

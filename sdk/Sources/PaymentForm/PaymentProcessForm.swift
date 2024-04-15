@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Foundation
 
 public class PaymentProcessForm: PaymentForm {
     public enum State {

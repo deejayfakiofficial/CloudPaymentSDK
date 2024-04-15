@@ -5,6 +5,7 @@
 //  Created by Sergey Iskhakov on 08.10.2020.
 //  Copyright © 2020 Cloudpayments. All rights reserved.
 //
+import Foundation
 
 public class PaymentConfiguration {
     let publicId: String

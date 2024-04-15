@@ -6,6 +6,7 @@
 //  Copyright © 2020 cloudpayments. All rights reserved.
 //
 import PassKit
+import Foundation
 
 extension PKPayment {
     public func convertToString() -> String? {

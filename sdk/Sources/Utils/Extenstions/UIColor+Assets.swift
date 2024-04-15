@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 extension UIColor {
     class var custom: UICustomColor.Type { return UICustomColor.self }

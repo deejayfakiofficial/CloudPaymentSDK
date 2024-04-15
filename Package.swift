@@ -24,10 +24,6 @@ let package = Package(
     targets: [
         .target(
             name: "CloudPayments",
-            dependencies: ["CloudpaymentsNetworking", 
-                .product(name: "Foundation",
-                         package: "swift-foundation")
-            ],
             path: "sdk",
             resources: [.process("../Resources")]
         ),

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 public class View: UIView {
     @IBInspectable var activeColor: UIColor = UIColor.mainBlue

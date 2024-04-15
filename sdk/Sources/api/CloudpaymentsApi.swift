@@ -1,5 +1,6 @@
 
 import CloudpaymentsNetworking
+import Foundation
 
 public struct TPayButtonConfiguration {
     public let isOnButton: Bool
