@@ -4,58 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CloudPaymentSDKIntaro-Package.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>CloudPayments-Package.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>CloudPayments.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
 			<integer>0</integer>
-		</dict>
-		<key>CloudPaymentsNetworking.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>CloudPaymentsSDK.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>cloudpayments-ios-1.5.1-Package.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>CloudPaymentSDKIntaro</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CloudPaymentsNetworking</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CloudPaymentsSDK</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>cloudpayments-ios-1.5.1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
 		</dict>
 	</dict>
 </dict>

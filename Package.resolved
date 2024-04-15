@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "CloudPaymentNetworkingIntaro",
+        "package": "CloudpaymentsNetworking",
         "repositoryURL": "https://github.com/deejayfakiofficial/CloudPaymentNetworkingIntaro.git",
         "state": {
           "branch": null,
-          "revision": "10b2b15185b2787b0ecc493c65d8c65fdab53e68",
-          "version": "1.5.1"
+          "revision": "a7f9f13bf886a8559ad419a13a55a055662c4d30",
+          "version": "3.0.0"
         }
       }
     ]
