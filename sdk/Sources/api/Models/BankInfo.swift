@@ -6,6 +6,8 @@
 //  Copyright © 2020 Cloudpayments. All rights reserved.
 //
 
+import Foundation
+
 public struct BankInfo: Codable {
     public private(set) var bankName: String?
     public private(set) var logoUrl: String?

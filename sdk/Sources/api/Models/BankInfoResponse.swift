@@ -6,6 +6,8 @@
 //  Copyright © 2020 Cloudpayments. All rights reserved.
 //
 
+import Foundation
+
 public struct BankInfoResponse: Codable {
     public private(set) var success: Bool?
     public private(set) var message: String?

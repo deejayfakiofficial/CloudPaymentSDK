@@ -6,6 +6,8 @@
 //  Copyright © 2021 Cloudpayments. All rights reserved.
 //
 
+import Foundation
+
 public struct Transaction: Codable {
     public private(set) var transactionId: Int64?
     public private(set) var amount: Double?
